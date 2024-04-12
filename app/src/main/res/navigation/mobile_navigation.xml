@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.example.furnituresergei.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_navigation_home_to_navigation_hall"
+            app:destination="@id/navigation_hall" />
+        <action
+            android:id="@+id/action_navigation_home_to_navigation_bedroom"
+            app:destination="@id/navigation_bedroom" />
+        <action
+            android:id="@+id/action_navigation_home_to_navigation_kitchen"
+            app:destination="@id/navigation_kitchen" />
+        <action
+            android:id="@+id/action_navigation_home_to_navigation_youth"
+            app:destination="@id/navigation_youth" />
+        <action
+            android:id="@+id/action_navigation_home_to_navigation_garden"
+            app:destination="@id/navigation_garden" />
+        <action
+            android:id="@+id/action_navigation_home_to_navigation_hallway"
+            app:destination="@id/navigation_hallway" />
+        <action
+            android:id="@+id/action_navigation_home_to_saleFragment"
+            app:destination="@id/saleFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_bedroom"
+        android:name="com.example.furnituresergei.ui.bedroom.BedRoomFragment"
+        android:label="Bedroom"
+        tools:layout="@layout/fragment_bedroom">
+        <action
+            android:id="@+id/action_navigation_bedroom_to_navigation_home"
+            app:destination="@id/navigation_home" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_hall"
+        android:name="com.example.furnituresergei.ui.hall.HallFragment"
+        android:label="Hall"
+        tools:layout="@layout/fragment_hall">
+        <action
+            android:id="@+id/action_navigation_hall_to_navigation_home"
+            app:destination="@id/navigation_home" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_kitchen"
+        android:name="com.example.furnituresergei.ui.kitchen.KitchenFragment"
+        android:label="@string/title_kitchen"
+        tools:layout="@layout/fragment_kitchen">
+        <action
+            android:id="@+id/action_navigation_kitchen_to_navigation_home"
+            app:destination="@id/navigation_home" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_youth"
+        android:name="com.example.furnituresergei.ui.youthfurniture.YouthFurnitureFragment"
+        android:label="@string/title_youth"
+        tools:layout="@layout/fragment_youth_furniture">
+        <action
+            android:id="@+id/action_navigation_youth_to_navigation_home"
+            app:destination="@id/navigation_home" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_garden"
+        android:name="com.example.furnituresergei.ui.garden.GardenFragment"
+        android:label="@string/title_garden"
+        tools:layout="@layout/fragment_garden">
+        <action
+            android:id="@+id/action_navigation_garden_to_navigation_home"
+            app:destination="@id/navigation_home" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_hallway"
+        android:name="com.example.furnituresergei.ui.hallway.HallwayFragment"
+        android:label="@string/title_hallway"
+        tools:layout="@layout/fragment_hallway">
+        <action
+            android:id="@+id/action_navigation_hallway_to_navigation_home"
+            app:destination="@id/navigation_home" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/saleFragment"
+        android:name="com.example.furnituresergei.ui.sale.SaleFragment"
+        android:label="@string/title_sale"
+        tools:layout="@layout/fragment_sale">
+        <action
+            android:id="@+id/action_saleFragment_to_navigation_home"
+            app:destination="@+id/navigation_home"/>
+    </fragment>
+    <fragment
+        android:id="@+id/descriptionFragment"
+        android:name="com.example.furnituresergei.ui.description.DescriptionFragment"
+        android:label="@string/title_description"
+        tools:layout="@layout/fragment_description" >
+        <action
+            android:id="@+id/action_descriptionFragment_to_navigation_home"
+            app:destination="@id/navigation_home" />
+    </fragment>
+</navigation>
